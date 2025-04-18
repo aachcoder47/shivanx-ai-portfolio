@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import BackgroundEffect from '@/components/BackgroundEffect';
+import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -28,27 +29,20 @@ const ContactPage = () => {
     setIsSubmitting(true);
     
     try {
-      // Prepare email data for MailerSend API
-      const emailData = {
-        from: {
-          email: "no-reply@yourdomain.com",
-          name: "Your Website Contact Form"
-        },
-        to: [
-          {
-            email: "aachcoder47@gmail.com",
-            name: "Site Owner"
-          }
-        ],
-        subject: `New contact message from ${formData.name}`,
-        text: `
-          Name: ${formData.name}
-          Email: ${formData.email}
-          
-          Message:
-          ${formData.message}
-        `,
-        html: `
+      const mailerSend = new MailerSend({
+        apiKey: process.env.VITE_MAILERSEND_API_KEY || ''
+      });
+
+      const sentFrom = new Sender("no-reply@yourdomain.com", "Your Website Contact Form");
+      const recipients = [
+        new Recipient("aachcoder47@gmail.com", "Site Owner")
+      ];
+
+      const emailParams = new EmailParams()
+        .setFrom(sentFrom)
+        .setTo(recipients)
+        .setSubject(`New contact message from ${formData.name}`)
+        .setHtml(`
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <h2 style="color: #6d28d9;">New Contact Form Submission</h2>
             <p><strong>From:</strong> ${formData.name}</p>
@@ -58,23 +52,16 @@ const ContactPage = () => {
               ${formData.message.replace(/\n/g, '<br>')}
             </div>
           </div>
-        `
-      };
+        `)
+        .setText(`
+          Name: ${formData.name}
+          Email: ${formData.email}
+          
+          Message:
+          ${formData.message}
+        `);
 
-      // Send email using MailerSend API
-      const response = await fetch('https://api.mailersend.com/v1/email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer mlsn.aeb2a367b4a212c4594720e537f96a3e68ea77198a3d3b1ba9e3a922c84cf281'
-        },
-        body: JSON.stringify(emailData)
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Failed to send email');
-      }
+      await mailerSend.email.send(emailParams);
 
       toast({
         title: "Message sent successfully",
