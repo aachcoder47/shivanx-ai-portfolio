@@ -58,7 +58,7 @@ const Navigation = () => {
             className="flex items-center space-x-2 text-cyber-cyan hover:text-cyber-magenta transition-colors duration-300"
           >
             <Code className="h-6 w-6" />
-            <span className="text-xl font-bold font-space tracking-wider">Shivanx Raj</span>
+            <span className="text-xl font-bold font-space tracking-wider">Shivansh Raj</span>
           </Link>
 
           {/* Desktop Nav */}

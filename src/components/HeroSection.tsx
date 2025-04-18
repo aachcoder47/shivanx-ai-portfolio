@@ -19,7 +19,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="gradient-text">Shivanx Raj</span>
+          <span className="gradient-text">Shivansh Raj</span>
         </motion.h1>
         
         <motion.p 
@@ -28,7 +28,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Hi, I'm Shivanx Raj, an AI engineer crafting innovative solutions at the intersection of technology and creativity.
+          Hi, I'm Shivansh Raj, an AI engineer crafting innovative solutions at the intersection of technology and creativity.
         </motion.p>
         
         <motion.div
