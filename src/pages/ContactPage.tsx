@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Mail, Phone, Send } from 'lucide-react';
@@ -28,16 +27,71 @@ const ContactPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission - in a real app, this would connect to a back-end
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Message sent successfully",
-      description: "Thanks for reaching out! I'll get back to you soon.",
-    });
-    
-    setFormData({ name: '', email: '', message: '' });
-    setIsSubmitting(false);
+    try {
+      // Prepare email data for MailerSend API
+      const emailData = {
+        from: {
+          email: "no-reply@yourdomain.com",
+          name: "Your Website Contact Form"
+        },
+        to: [
+          {
+            email: "aachcoder47@gmail.com",
+            name: "Site Owner"
+          }
+        ],
+        subject: `New contact message from ${formData.name}`,
+        text: `
+          Name: ${formData.name}
+          Email: ${formData.email}
+          
+          Message:
+          ${formData.message}
+        `,
+        html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #6d28d9;">New Contact Form Submission</h2>
+            <p><strong>From:</strong> ${formData.name}</p>
+            <p><strong>Email:</strong> ${formData.email}</p>
+            <p><strong>Message:</strong></p>
+            <div style="background-color: #f9fafb; padding: 15px; border-radius: 5px; margin-top: 10px;">
+              ${formData.message.replace(/\n/g, '<br>')}
+            </div>
+          </div>
+        `
+      };
+
+      // Send email using MailerSend API
+      const response = await fetch('https://api.mailersend.com/v1/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer mlsn.aeb2a367b4a212c4594720e537f96a3e68ea77198a3d3b1ba9e3a922c84cf281'
+        },
+        body: JSON.stringify(emailData)
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to send email');
+      }
+
+      toast({
+        title: "Message sent successfully",
+        description: "Thanks for reaching out! I'll get back to you soon.",
+      });
+      
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error sending message",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
