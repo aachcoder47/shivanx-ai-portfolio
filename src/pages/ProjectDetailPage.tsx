@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -17,6 +16,7 @@ const ProjectDetailPage = () => {
       title: 'AI PPT Generator',
       description: 'A tool that transforms text into professional PowerPoint presentations using AI.',
       color: 'purple' as const,
+      demoLink: 'https://huggingface.co/spaces/ash2203/AI_PPT_Generator',
       fullDescription: `
         The AI PPT Generator is an advanced tool that leverages natural language processing and computer vision to automatically create stunning PowerPoint presentations from text input.
         
@@ -36,6 +36,7 @@ const ProjectDetailPage = () => {
       title: 'DocAI Chatbot',
       description: 'An AI-powered chatbot designed to assist with document-related queries.',
       color: 'cyan' as const,
+      demoLink: 'https://huggingface.co/spaces/aach456/DocAI-chatbot',
       fullDescription: `
         DocAI is an intelligent chatbot built to help users quickly find information within large collections of documents. 
         
@@ -55,6 +56,7 @@ const ProjectDetailPage = () => {
       title: 'Music Generation AI',
       description: 'An AI system that composes music based on user input.',
       color: 'magenta' as const,
+      demoLink: 'https://huggingface.co/spaces/aach456/music-gen-ai',
       fullDescription: `
         The Music Generation AI is a creative tool that composes original music pieces based on user-defined parameters. 
         
@@ -74,6 +76,7 @@ const ProjectDetailPage = () => {
       title: 'MRI Scan Detector',
       description: 'A machine learning model that analyzes MRI scans for diagnostic purposes.',
       color: 'purple' as const,
+      demoLink: 'https://gitlab.com/aach1/mri-scan-detector',
       fullDescription: `
         The MRI Scan Detector is a medical AI tool designed to assist radiologists in analyzing Magnetic Resonance Imaging scans. 
         
@@ -93,6 +96,7 @@ const ProjectDetailPage = () => {
       title: 'Scalping Trading Bot',
       description: 'An automated trading bot optimized for scalping strategies.',
       color: 'cyan' as const,
+      demoLink: 'https://gitlab.com/aach1/scalping-trading-bot',
       fullDescription: `
         The Scalping Trading Bot is an algorithmic trading system designed for high-frequency, small-profit trades in financial markets. 
         
@@ -127,10 +131,14 @@ const ProjectDetailPage = () => {
   }
   
   const handleDemoClick = () => {
-    toast({
-      title: "Demo Coming Soon",
-      description: "The live demo for this project will be available soon.",
-    });
+    if (project.demoLink) {
+      window.open(project.demoLink, '_blank');
+    } else {
+      toast({
+        title: "Demo Coming Soon",
+        description: "The live demo for this project will be available soon.",
+      });
+    }
   };
 
   return (

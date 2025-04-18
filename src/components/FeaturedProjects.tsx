@@ -13,6 +13,7 @@ const FeaturedProjects = () => {
       image: "/placeholder.svg",
       slug: "ai-ppt-generator",
       color: "purple" as const,
+      demoLink: "https://huggingface.co/spaces/ash2203/AI_PPT_Generator",
     },
     {
       title: "DocAI Chatbot",
@@ -20,6 +21,7 @@ const FeaturedProjects = () => {
       image: "/placeholder.svg",
       slug: "docai-chatbot",
       color: "cyan" as const,
+      demoLink: "https://huggingface.co/spaces/aach456/DocAI-chatbot",
     },
     {
       title: "Music Generation AI",
@@ -27,6 +29,7 @@ const FeaturedProjects = () => {
       image: "/placeholder.svg",
       slug: "music-generation-ai",
       color: "magenta" as const,
+      demoLink: "https://huggingface.co/spaces/aach456/music-gen-ai",
     }
   ];
 

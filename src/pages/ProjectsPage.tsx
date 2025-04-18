@@ -12,6 +12,7 @@ const ProjectsPage = () => {
       image: "/placeholder.svg",
       slug: "ai-ppt-generator",
       color: "purple" as const,
+      demoLink: "https://huggingface.co/spaces/ash2203/AI_PPT_Generator",
     },
     {
       title: "DocAI Chatbot",
@@ -19,6 +20,7 @@ const ProjectsPage = () => {
       image: "/placeholder.svg",
       slug: "docai-chatbot",
       color: "cyan" as const,
+      demoLink: "https://huggingface.co/spaces/aach456/DocAI-chatbot",
     },
     {
       title: "Music Generation AI",
@@ -26,6 +28,7 @@ const ProjectsPage = () => {
       image: "/placeholder.svg",
       slug: "music-generation-ai",
       color: "magenta" as const,
+      demoLink: "https://huggingface.co/spaces/aach456/music-gen-ai",
     },
     {
       title: "MRI Scan Detector",
@@ -33,6 +36,7 @@ const ProjectsPage = () => {
       image: "/placeholder.svg",
       slug: "mri-scan-detector",
       color: "purple" as const,
+      demoLink: "https://gitlab.com/aach1/mri-scan-detector",
     },
     {
       title: "Scalping Trading Bot",
@@ -40,6 +44,7 @@ const ProjectsPage = () => {
       image: "/placeholder.svg",
       slug: "scalping-trading-bot",
       color: "cyan" as const,
+      demoLink: "https://gitlab.com/aach1/scalping-trading-bot",
     }
   ];
 
