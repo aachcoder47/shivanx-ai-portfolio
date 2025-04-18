@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Mail, Phone, Send } from 'lucide-react';
@@ -7,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import BackgroundEffect from '@/components/BackgroundEffect';
+import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -28,16 +28,57 @@ const ContactPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission - in a real app, this would connect to a back-end
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Message sent successfully",
-      description: "Thanks for reaching out! I'll get back to you soon.",
-    });
-    
-    setFormData({ name: '', email: '', message: '' });
-    setIsSubmitting(false);
+    try {
+      const mailerSend = new MailerSend({
+        apiKey: process.env.VITE_MAILERSEND_API_KEY || ''
+      });
+
+      const sentFrom = new Sender("no-reply@yourdomain.com", "Your Website Contact Form");
+      const recipients = [
+        new Recipient("aachcoder47@gmail.com", "Site Owner")
+      ];
+
+      const emailParams = new EmailParams()
+        .setFrom(sentFrom)
+        .setTo(recipients)
+        .setSubject(`New contact message from ${formData.name}`)
+        .setHtml(`
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #6d28d9;">New Contact Form Submission</h2>
+            <p><strong>From:</strong> ${formData.name}</p>
+            <p><strong>Email:</strong> ${formData.email}</p>
+            <p><strong>Message:</strong></p>
+            <div style="background-color: #f9fafb; padding: 15px; border-radius: 5px; margin-top: 10px;">
+              ${formData.message.replace(/\n/g, '<br>')}
+            </div>
+          </div>
+        `)
+        .setText(`
+          Name: ${formData.name}
+          Email: ${formData.email}
+          
+          Message:
+          ${formData.message}
+        `);
+
+      await mailerSend.email.send(emailParams);
+
+      toast({
+        title: "Message sent successfully",
+        description: "Thanks for reaching out! I'll get back to you soon.",
+      });
+      
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error sending message",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
