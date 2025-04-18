@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark theme by default */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 263 85% 50%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 199 92% 41%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-cyber-dark text-foreground font-sans antialiased;
+    background-image: radial-gradient(circle at center, rgba(139, 92, 246, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-space;
+  }
+}
+
+@layer components {
+  .neon-border {
+    @apply border border-transparent relative;
+    box-shadow: 0 0 5px theme('colors.cyber.purple'), 0 0 10px theme('colors.cyber.purple');
+  }
+
+  .glow-text {
+    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .cyber-grid {
+    @apply bg-cyber-grid bg-cyber-grid;
+    background-position: center;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyber-purple via-cyber-cyan to-cyber-magenta;
+  }
+
+  .neon-button {
+    @apply relative overflow-hidden px-6 py-3 bg-transparent border text-lg transition-all duration-300;
+  }
+
+  .neon-button::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-300;
+    background: linear-gradient(45deg, rgba(139, 92, 246, 0.4), rgba(14, 165, 233, 0.4));
+  }
+
+  .neon-button:hover::before {
+    @apply opacity-100;
+  }
+
+  .neon-button--purple {
+    @apply border-cyber-purple text-cyber-purple;
+    box-shadow: 0 0 5px theme('colors.cyber.purple'), 0 0 10px theme('colors.cyber.purple');
+  }
+
+  .neon-button--purple:hover {
+    box-shadow: 0 0 10px theme('colors.cyber.purple'), 0 0 20px theme('colors.cyber.purple');
+  }
+
+  .neon-button--cyan {
+    @apply border-cyber-cyan text-cyber-cyan;
+    box-shadow: 0 0 5px theme('colors.cyber.cyan'), 0 0 10px theme('colors.cyber.cyan');
+  }
+
+  .neon-button--cyan:hover {
+    box-shadow: 0 0 10px theme('colors.cyber.cyan'), 0 0 20px theme('colors.cyber.cyan');
+  }
+
+  .glitch-effect:hover {
+    @apply animate-glitch;
+  }
+
+  .timeline-item {
+    @apply relative pl-8 pb-10 border-l border-cyber-purple;
+  }
+
+  .timeline-dot {
+    @apply absolute -left-[5px] top-0 h-2.5 w-2.5 rounded-full bg-cyber-purple animate-pulse;
+  }
+
+  .timeline-item:last-child {
+    @apply border-0;
+  }
+}
