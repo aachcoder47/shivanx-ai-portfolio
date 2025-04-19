@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import BackgroundEffect from '@/components/BackgroundEffect';
+import { Resend } from 'resend';
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -23,51 +24,50 @@ const ContactPage = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
   
-// Inside the handleSubmit function in your ContactPage component
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
-  
-  try {
-    // Point to your API server - make sure these values match your setup
-    const API_URL = 'http://localhost:3001'; 
-    console.log("Sending request to:", `${API_URL}/api/send-email`);
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
     
-    const response = await fetch(`${API_URL}/api/send-email`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        message: formData.message
-      }),
-    });
+    try {
+      const resend = new Resend('re_XsTAhwov_6xtLoCSjuZ7nJZtcLsErHUvf');
+      
+      const { data, error } = await resend.emails.send({
+        from: 'Contact Form <onboarding@resend.dev>',
+        to: ['shivanshdata456@gmail.com'],
+        subject: `New Contact Form Submission from ${formData.name}`,
+        html: `
+          <div>
+            <h2>New Contact Form Submission</h2>
+            <p><strong>From:</strong> ${formData.name}</p>
+            <p><strong>Email:</strong> ${formData.email}</p>
+            <p><strong>Message:</strong></p>
+            <div>${formData.message}</div>
+          </div>
+        `
+      });
 
-    const data = await response.json();
-    
-    if (!response.ok) {
-      throw new Error(data.message || 'Something went wrong');
+      if (error) {
+        throw new Error(error.message);
+      }
+
+      toast({
+        title: "Message sent successfully",
+        description: "Thanks for reaching out! I'll get back to you soon.",
+      });
+      
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error sending message",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
     }
+  };
 
-    toast({
-      title: "Message sent successfully",
-      description: "Thanks for reaching out! I'll get back to you soon.",
-    });
-    
-    setFormData({ name: '', email: '', message: '' });
-  } catch (error) {
-    console.error('Error sending email:', error);
-    toast({
-      title: "Error sending message",
-      description: "There was a problem sending your message. Please try again later.",
-      variant: "destructive"
-    });
-  } finally {
-    setIsSubmitting(false);
-  }
-};
   return (
     <>
       <BackgroundEffect />

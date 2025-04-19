@@ -4,16 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev:server": "ts-node --transpile-only src/server/index.ts",
-  "build:server": "tsc -p tsconfig.server.json",
-  "start:server": "node dist/server/index.js",
-  "start": "concurrently \"node index.js\" \"npm run dev\"",
-  "dev": "concurrently \"node index.js\" \"vite\"",
-  "build": "concurrently \"node index.js\" \"vite build\"",
-  "build:dev": "vite build --mode development",
-  "lint": "eslint .",
-  "preview": "vite preview"
-},
+    "dev:server": "ts-node --transpile-only src/server/index.ts",
+    "build:server": "tsc -p tsconfig.server.json",
+    "start:server": "node dist/server/index.js",
+    "start": "concurrently \"node index.js\" \"npm run dev\"",
+    "dev": "concurrently \"node index.js\" \"vite\"",
+    "build": "concurrently \"node index.js\" \"vite build\"",
+    "build:dev": "vite build --mode development",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
