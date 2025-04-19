@@ -36,7 +36,11 @@ const handleSubmit = async (e) => {
       to_email: 'shivanshdata456@gmail.com',
       from_name: formData.name,
       from_email: formData.email,
-      message: formData.message,
+      message: Name: ${formData.name}
+Email: ${formData.email}
+
+Message:
+${formData.message},
       // Include any other parameters your template needs
     };
     
