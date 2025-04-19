@@ -13,11 +13,12 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
+// Create the query client outside of the component
 const queryClient = new QueryClient();
 
 const App = () => (
-  <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
+  <QueryClientProvider client={queryClient}>
+    <React.StrictMode>
       <TooltipProvider>
         <Toaster />
         <Sonner />
@@ -34,8 +35,8 @@ const App = () => (
           </Layout>
         </BrowserRouter>
       </TooltipProvider>
-    </QueryClientProvider>
-  </React.StrictMode>
+    </React.StrictMode>
+  </QueryClientProvider>
 );
 
 export default App;
