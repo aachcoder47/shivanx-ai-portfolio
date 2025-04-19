@@ -9,7 +9,7 @@
     "start:server": "node dist/server/index.js",
     "start": "concurrently \"node index.js\" \"npm run dev\"",
     "dev": "concurrently \"node index.js\"\"vite\"",
-    "build": "vite build",
+    "build": "concurrently \"node index.js\"\"vite build\"",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
