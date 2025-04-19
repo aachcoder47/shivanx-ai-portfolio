@@ -1,11 +1,11 @@
-// src/server/api/send-email.ts
+
 import express from 'express';
 import { Resend } from 'resend';
 import cors from 'cors';
 import { EmailTemplate } from '../../../components/EmailTemplate';
 
 const router = express.Router();
-const resend = new Resend(process.env.RESEND_API_KEY || 're_XsTAhwov_6xtLoCSjuZ7nJZtcLsErHUvf');
+const resend = new Resend('re_XsTAhwov_6xtLoCSjuZ7nJZtcLsErHUvf');
 
 // Apply CORS middleware
 router.use(cors());
