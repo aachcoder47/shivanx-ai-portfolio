@@ -42,10 +42,10 @@ const handleSubmit = async (e) => {
     
     // Send the email using EmailJS
     const result = await emailjs.send(
-      'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-      'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+      'service_djomyhg', // Replace with your EmailJS service ID
+      'template_5awc5zj', // Replace with your EmailJS template ID
       templateParams,
-      'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      'QoypdFgIqb9gGZsr-' // Replace with your EmailJS public key
     );
     
     console.log('Email sent successfully:', result.text);
