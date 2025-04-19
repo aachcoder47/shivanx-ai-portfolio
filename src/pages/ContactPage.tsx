@@ -26,53 +26,49 @@ const ContactPage = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  
+  try {
+    // Prepare the template parameters
+    const templateParams = {
+      to_email: 'shivanshdata456@gmail.com',
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+      // Include any other parameters your template needs
+    };
     
-    try {
-      // Prepare the template parameters
-      const templateParams = {
-        to_email: 'shivanshdata456@gmail.com',
-        from_name: formData.name,
-        from_email: formData.email,
-        message: 
-Name: ${formData.name}
-Email: ${formData.email}
-Message:${formData.message},
-        // Include any other parameters your template needs
-      };
-      
-      // Send the email using EmailJS
-      const result = await emailjs.send(
-        'service_djomyhg', // Replace with your EmailJS service ID
-        'template_5awc5zj', // Replace with your EmailJS template ID
-        templateParams,
-        'QoypdFgIqb9gGZsr-' // Replace with your EmailJS public key
-      );
-      
-      console.log('Email sent successfully:', result.text);
-      
-      // Show success message using Sonner toast
-      toast.success("Message sent successfully", {
-        description: "Thanks for reaching out! We'll get back to you soon."
-      });
-      
-      // Reset the form
-      setFormData({ name: '', email: '', message: '' });
-      
-    } catch (error) {
-      console.error('Error sending email:', error);
-      
-      // Show error message using Sonner toast
-      toast.error("Error sending message", {
-        description: "There was a problem sending your message. Please try again later."
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
+    // Send the email using EmailJS
+    const result = await emailjs.send(
+      'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+      'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+      templateParams,
+      'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+    );
+    
+    console.log('Email sent successfully:', result.text);
+    
+    // Show success message using Sonner toast
+    toast.success("Message sent successfully", {
+      description: "Thanks for reaching out! We'll get back to you soon."
+    });
+    
+    // Reset the form
+    setFormData({ name: '', email: '', message: '' });
+    
+  } catch (error) {
+    console.error('Error sending email:', error);
+    
+    // Show error message using Sonner toast
+    toast.error("Error sending message", {
+      description: "There was a problem sending your message. Please try again later."
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
   return (
     <>
       <BackgroundEffect />
