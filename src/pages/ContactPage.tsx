@@ -36,20 +36,19 @@ const handleSubmit = async (e) => {
       to_email: 'shivanshdata456@gmail.com',
       from_name: formData.name,
       from_email: formData.email,
-      message: Name: ${formData.name}
+      message: `Name: ${formData.name}
 Email: ${formData.email}
-
 Message:
-${formData.message},
+${formData.message}`,
       // Include any other parameters your template needs
     };
     
     // Send the email using EmailJS
     const result = await emailjs.send(
-      'service_djomyhg', // Replace with your EmailJS service ID
-      'template_5awc5zj', // Replace with your EmailJS template ID
+      'service_djomyhg', 
+      'template_5awc5zj', 
       templateParams,
-      'QoypdFgIqb9gGZsr-' // Replace with your EmailJS public key
+      'QoypdFgIqb9gGZsr-'
     );
     
     console.log('Email sent successfully:', result.text);
