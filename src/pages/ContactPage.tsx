@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { toast } from '@/components/ui/sonner';
 import BackgroundEffect from '@/components/BackgroundEffect';
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
   const { toast: toastNotification } = useToast();
@@ -25,44 +26,44 @@ const ContactPage = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Instead of directly calling the Resend API, let's simulate success
-    // This is a frontend-only solution for demonstration purposes
     try {
-      // Simulate API call with a delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Prepare the template parameters
+      const templateParams = {
+        to_email: 'shivanshdata456@gmail.com',
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        // Include any other parameters your template needs
+      };
       
-      console.log('Form submission data:', formData);
+      // Send the email using EmailJS
+      const result = await emailjs.send(
+        'service_djomyhg', // Replace with your EmailJS service ID
+        'template_5awc5zj', // Replace with your EmailJS template ID
+        templateParams,
+        'QoypdFgIqb9gGZsr-' // Replace with your EmailJS public key
+      );
       
-      // Show success message using Sonner toast for a better UX
+      console.log('Email sent successfully:', result.text);
+      
+      // Show success message using Sonner toast
       toast.success("Message sent successfully", {
-        description: "Thanks for reaching out! I'll get back to you soon."
-      });
-      
-      // Also use the existing toast system as a fallback
-      toastNotification({
-        title: "Message sent successfully",
-        description: "Thanks for reaching out! I'll get back to you soon.",
+        description: "Thanks for reaching out! We'll get back to you soon."
       });
       
       // Reset the form
       setFormData({ name: '', email: '', message: '' });
+      
     } catch (error) {
-      console.error('Error in form submission:', error);
+      console.error('Error sending email:', error);
       
       // Show error message using Sonner toast
       toast.error("Error sending message", {
         description: "There was a problem sending your message. Please try again later."
-      });
-      
-      // Also use the existing toast system as a fallback
-      toastNotification({
-        title: "Error sending message",
-        description: "There was a problem sending your message. Please try again later.",
-        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
