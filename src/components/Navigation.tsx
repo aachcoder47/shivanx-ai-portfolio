@@ -58,7 +58,7 @@ const Navigation = () => {
             className="flex items-center space-x-2 text-cyber-cyan hover:text-cyber-magenta transition-colors duration-300"
           >
             <Code className="h-6 w-6" />
-            <span className="text-xl font-bold font-space tracking-wider">Shivansh Raj</span>
+            <span className="text-xl font-bold font-space tracking-wider">Ritwik Raj</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -80,6 +80,15 @@ const Navigation = () => {
                 )}
               </Link>
             ))}
+            <Button asChild className="neon-button neon-button--purple">
+              <a 
+                href="https://www.fiverr.com/users/god_dev456" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Hire Me
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Nav Toggle */}
@@ -112,6 +121,15 @@ const Navigation = () => {
               {link.name}
             </Link>
           ))}
+          <Button asChild className="neon-button neon-button--purple mt-4">
+            <a 
+              href="https://www.fiverr.com/users/god_dev456" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Hire Me
+            </a>
+          </Button>
         </div>
       </div>
     </nav>

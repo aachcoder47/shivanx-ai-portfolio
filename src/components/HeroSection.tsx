@@ -19,7 +19,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="gradient-text">Shivansh Raj</span>
+          <span className="gradient-text">Ritwik Raj</span>
         </motion.h1>
         
         <motion.p 
@@ -28,7 +28,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Hi, I'm Shivansh Raj, an AI engineer crafting innovative solutions at the intersection of technology and creativity.
+          Hi, I'm Ritwik Raj, an AI engineer crafting innovative solutions at the intersection of technology and creativity.
         </motion.p>
         
         <motion.div
@@ -50,9 +50,13 @@ const HeroSection = () => {
             asChild
             className="neon-button neon-button--cyan"
           >
-            <Link to="/contact">
-              Let's Connect <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
+            <a 
+              href="https://www.fiverr.com/users/god_dev456" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Hire Me on Fiverr <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
           </Button>
         </motion.div>
       </div>

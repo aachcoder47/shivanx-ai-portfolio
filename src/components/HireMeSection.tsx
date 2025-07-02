@@ -39,13 +39,6 @@ const HireMeSection = () => {
             <CardContent className="space-y-4">
               <div className="space-y-3">
                 <Button asChild className="w-full justify-start neon-button neon-button--cyan">
-                  <a href="mailto:ritwikraj@example.com" className="flex items-center">
-                    <Mail className="mr-3 h-4 w-4" />
-                    Email Me Directly
-                  </a>
-                </Button>
-                
-                <Button asChild variant="outline" className="w-full justify-start">
                   <a 
                     href="https://www.fiverr.com/users/god_dev456" 
                     target="_blank" 
@@ -53,19 +46,17 @@ const HireMeSection = () => {
                     className="flex items-center"
                   >
                     <MessageCircle className="mr-3 h-4 w-4" />
-                    Message on Fiverr
+                    Message Me on Fiverr
                   </a>
                 </Button>
-
-                <Button asChild variant="outline" className="w-full justify-start">
-                  <a 
-                    href="/contact" 
-                    className="flex items-center"
-                  >
-                    <Calendar className="mr-3 h-4 w-4" />
-                    Contact Form
-                  </a>
-                </Button>
+              </div>
+              
+              <div className="bg-cyber-cyan/10 rounded-lg p-4 mt-6">
+                <h4 className="font-semibold text-cyber-cyan mb-2">Quick Response Guaranteed</h4>
+                <p className="text-gray-300 text-sm">
+                  Average response time: 2 hours. Message me on Fiverr for the fastest communication 
+                  and to discuss your project requirements in detail.
+                </p>
               </div>
             </CardContent>
           </Card>
