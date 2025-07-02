@@ -8,54 +8,37 @@ import { Badge } from '@/components/ui/badge';
 const FiverrSection = () => {
   const fiverrGigs = [
     {
-      title: "AI PowerPoint Generator Development",
-      description: "I will create an AI-powered tool that transforms your text into professional PowerPoint presentations with custom designs and layouts.",
-      price: "Starting at $50",
-      delivery: "3-5 days",
+      title: "AI Images and Videos for Your Business",
+      description: "I will generate high-quality AI images and videos tailored to your business needs using Midjourney, DALL·E, RunwayML, and Sora. Perfect for social media, advertising, websites, or product promotion.",
+      price: "Starting at ₹2,249",
+      delivery: "3-7 days",
       rating: 5.0,
-      reviews: 12,
-      skills: ["Python", "AI", "OpenAI API", "PowerPoint Automation"],
-      level: "Level 2 Seller"
+      reviews: 15,
+      skills: ["Stable Diffusion", "3D", "Fashion", "Website Design"],
+      level: "Expert AI Developer",
+      gigUrl: "https://www.fiverr.com/s/5r80Gyb"
     },
     {
-      title: "Custom AI Chatbot Development",
-      description: "I will build intelligent chatbots for document processing, customer support, and business automation using latest AI technologies.",
-      price: "Starting at $75",
-      delivery: "5-7 days", 
-      rating: 4.9,
+      title: "Custom AI Model Development",
+      description: "I will develop custom AI/ML models to solve real-world business problems from automation and prediction to personalization and analytics. Scalable solutions for startups and enterprises.",
+      price: "Starting at ₹12,592",
+      delivery: "7-30 days", 
+      rating: 5.0,
       reviews: 8,
-      skills: ["NLP", "LangChain", "Document AI", "Chatbot Development"],
-      level: "Level 2 Seller"
+      skills: ["Custom ML Models", "Predictive Analytics", "NLP", "Computer Vision"],
+      level: "Expert AI Developer",
+      gigUrl: "https://www.fiverr.com/s/pdX3p4Y"
     },
     {
-      title: "AI Music Generation System",
-      description: "I will develop custom AI music generation tools that create original compositions based on your specifications and style preferences.",
-      price: "Starting at $100",
-      delivery: "7-10 days",
-      rating: 5.0,
-      reviews: 5,
-      skills: ["AI Music", "Machine Learning", "Audio Processing", "Creative AI"],
-      level: "Level 2 Seller"
-    },
-    {
-      title: "Medical AI & MRI Analysis",
-      description: "I will create machine learning models for medical image analysis, specifically MRI scan detection and diagnostic assistance tools.",
-      price: "Starting at $150",
-      delivery: "10-14 days",
-      rating: 5.0,
-      reviews: 3,
-      skills: ["Medical AI", "Computer Vision", "TensorFlow", "Healthcare Tech"],
-      level: "Level 2 Seller"
-    },
-    {
-      title: "AI Trading Bot Development",
-      description: "I will build automated trading bots with AI-powered strategies for scalping, day trading, and algorithmic investment solutions.",
-      price: "Starting at $200",
-      delivery: "14-21 days",
-      rating: 4.8,
-      reviews: 7,
-      skills: ["Algorithmic Trading", "Python", "API Integration", "Financial AI"],
-      level: "Level 2 Seller"
+      title: "Python Automation Scripts",
+      description: "I will write custom Python automation scripts to save time and streamline your work. From web scraping to data processing, email automation, and AI-powered automations.",
+      price: "Starting at ₹5,000",
+      delivery: "3-10 days",
+      rating: 4.9,
+      reviews: 12,
+      skills: ["Python", "Web Scraping", "API Integration", "Task Automation"],
+      level: "Expert AI Developer",
+      gigUrl: "https://www.fiverr.com/s/pdX3pXo"
     }
   ];
 
@@ -145,7 +128,7 @@ const FiverrSection = () => {
                   
                   <Button asChild className="w-full neon-button neon-button--cyan">
                     <a 
-                      href="https://www.fiverr.com/users/god_dev456" 
+                      href={gig.gigUrl || "https://www.fiverr.com/users/god_dev456"} 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
