@@ -3,6 +3,7 @@ import React from 'react';
 import HeroSection from '@/components/HeroSection';
 import FeaturedProjects from '@/components/FeaturedProjects';
 import FiverrSection from '@/components/FiverrSection';
+import HireMeSection from '@/components/HireMeSection';
 import BackgroundEffect from '@/components/BackgroundEffect';
 
 const HomePage = () => {
@@ -12,6 +13,7 @@ const HomePage = () => {
       <HeroSection />
       <FeaturedProjects />
       <FiverrSection />
+      <HireMeSection />
     </>
   );
 };
