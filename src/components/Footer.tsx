@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Mail, Phone, Code } from 'lucide-react';
+import { Mail, Phone, Code } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -48,19 +48,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-cyber-purple" />
-                <a href="tel:+919731316640" className="text-gray-400 hover:text-cyber-cyan transition-colors">
-                  +91 9731316640
-                </a>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Instagram className="h-4 w-4 text-cyber-purple" />
-                <a 
-                  href="https://instagram.com/pvtt_shivanx_raj" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-gray-400 hover:text-cyber-cyan transition-colors"
-                >
-                  @pvtt_shivanx_raj
+                <a href="tel:+917462085177" className="text-gray-400 hover:text-cyber-cyan transition-colors">
+                  +91 7462085177
                 </a>
               </li>
             </ul>
