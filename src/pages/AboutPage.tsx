@@ -22,14 +22,14 @@ const AboutPage = () => {
               <Avatar className="w-32 h-32 border-4 border-cyber-purple">
                 <AvatarImage 
                   src="/lovable-uploads/03f359e0-a920-4d33-ac50-62756adbe544.png" 
-                  alt="Shivansh Raj" 
+                  alt="Ritwik Raj" 
                   className="object-cover"
                 />
-                <AvatarFallback>SR</AvatarFallback>
+                <AvatarFallback>RR</AvatarFallback>
               </Avatar>
             </div>
             <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-              Hi, I'm Shivansh Raj, an AI engineer passionate about creating innovative solutions at the intersection of technology and creativity.
+              Hi, I'm Ritwik Raj, an AI engineer passionate about creating innovative solutions at the intersection of technology and creativity.
             </p>
           </motion.div>
           
@@ -43,7 +43,7 @@ const AboutPage = () => {
               <h2 className="text-2xl font-bold mb-6">Personal Snapshot</h2>
               <img 
                 src="/lovable-uploads/55e5506c-9c8a-4af9-a884-d94269d3e251.png" 
-                alt="Shivansh with his dog" 
+                alt="Ritwik with his dog" 
                 className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />
             </div>

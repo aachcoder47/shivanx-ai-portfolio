@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <Code className="h-5 w-5 text-cyber-cyan" />
-              <span className="text-lg font-bold font-space tracking-wider">Shivansh Raj</span>
+              <span className="text-lg font-bold font-space tracking-wider">Ritwik Raj</span>
             </Link>
             <p className="text-gray-400 max-w-xs">
               AI engineer crafting innovative solutions at the intersection of technology and creativity.
@@ -69,7 +69,7 @@ const Footer = () => {
         
         <div className="border-t border-cyber-purple/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            &copy; {currentYear} Shivansh Raj. All rights reserved.
+            &copy; {currentYear} Ritwik Raj. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm mt-2 md:mt-0">
             Built with <span className="text-cyber-magenta">❤</span>

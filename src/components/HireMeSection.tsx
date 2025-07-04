@@ -95,17 +95,31 @@ const HireMeSection = () => {
                 </div>
               </div>
               
-              <Button asChild className="w-full neon-button neon-button--purple">
-                <a 
-                  href="https://shivanx-ai-portfolio.vercel.app/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center"
-                >
-                  View Full Portfolio
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
+              <div className="space-y-3">
+                <Button asChild className="w-full neon-button neon-button--purple">
+                  <a 
+                    href="https://shivanx-ai-portfolio.vercel.app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    View Portfolio Website
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+                
+                <Button asChild variant="outline" className="w-full">
+                  <a 
+                    href="https://www.freelancer.com/u/ritwikraj456?sb=t" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    View Freelancer Profile
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </motion.div>

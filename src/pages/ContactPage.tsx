@@ -33,7 +33,7 @@ const handleSubmit = async (e) => {
   try {
     // Prepare the template parameters
     const templateParams = {
-      to_email: 'shivanshdata456@gmail.com',
+      to_email: 'ritwikraj@example.com',
       from_name: formData.name,
       from_email: formData.email,
       message: `Name: ${formData.name}
