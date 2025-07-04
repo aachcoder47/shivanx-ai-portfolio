@@ -53,9 +53,35 @@ const AboutPage = () => {
               <p className="text-gray-300 mb-4">
                 As an AI engineer, I'm driven by the potential of technology to solve complex problems and create meaningful experiences. My work spans various domains, from machine learning to innovative software solutions.
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-300 mb-6">
                 When I'm not coding, you'll find me spending time with my furry companion, exploring new technologies, or brainstorming the next big innovation.
               </p>
+              
+              <div className="space-y-3">
+                <a 
+                  href="https://shivanx-ai-portfolio.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-cyber-purple/20 border border-cyber-purple/30 rounded-lg hover:bg-cyber-purple/30 transition-colors text-cyber-purple font-medium"
+                >
+                  Portfolio Website
+                  <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+                
+                <a 
+                  href="https://www.freelancer.com/u/ritwikraj456?sb=t" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-cyber-cyan/20 border border-cyber-cyan/30 rounded-lg hover:bg-cyber-cyan/30 transition-colors text-cyber-cyan font-medium ml-3"
+                >
+                  Freelancer Profile
+                  <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
