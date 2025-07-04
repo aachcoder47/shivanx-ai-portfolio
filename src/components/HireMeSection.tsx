@@ -46,17 +46,30 @@ const HireMeSection = () => {
                     className="flex items-center"
                   >
                     <MessageCircle className="mr-3 h-4 w-4" />
-                    Message Me on Fiverr
+                    Hire on Fiverr (Fixed Projects)
+                  </a>
+                </Button>
+                
+                <Button asChild variant="outline" className="w-full justify-start">
+                  <a 
+                    href="https://www.freelancer.com/u/ritwikraj456?sb=t" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    <MessageCircle className="mr-3 h-4 w-4" />
+                    Hire on Freelancer (Big Projects/Hourly)
                   </a>
                 </Button>
               </div>
               
               <div className="bg-cyber-cyan/10 rounded-lg p-4 mt-6">
-                <h4 className="font-semibold text-cyber-cyan mb-2">Quick Response Guaranteed</h4>
-                <p className="text-gray-300 text-sm">
-                  Average response time: 2 hours. Message me on Fiverr for the fastest communication 
-                  and to discuss your project requirements in detail.
-                </p>
+                <h4 className="font-semibold text-cyber-cyan mb-2">Choose Your Platform</h4>
+                <div className="text-gray-300 text-sm space-y-2">
+                  <div><strong>Fiverr:</strong> Perfect for fixed-price projects and quick deliveries</div>
+                  <div><strong>Freelancer:</strong> Ideal for big projects, long-term work, and hourly engagements</div>
+                  <div className="mt-2 text-xs text-gray-400">Average response time: 2 hours on both platforms</div>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -145,7 +158,16 @@ const HireMeSection = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Hire Me on Fiverr
+                Hire on Fiverr
+              </a>
+            </Button>
+            <Button asChild className="neon-button neon-button--purple">
+              <a 
+                href="https://www.freelancer.com/u/ritwikraj456?sb=t" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Hire on Freelancer
               </a>
             </Button>
             <Button asChild variant="outline">
