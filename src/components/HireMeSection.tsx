@@ -52,7 +52,7 @@ const HireMeSection = () => {
                 
                 <Button asChild variant="outline" className="w-full justify-start">
                   <a 
-                    href="https://www.freelancer.com/u/ritwikraj456?sb=t" 
+                    href="https://www.freelancer.com/u/ritwikraj56?sb=t" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center"
@@ -123,7 +123,7 @@ const HireMeSection = () => {
                 
                 <Button asChild variant="outline" className="w-full">
                   <a 
-                    href="https://www.freelancer.com/u/ritwikraj456?sb=t" 
+                    href="https://www.freelancer.com/u/ritwikraj56?sb=t" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center"
@@ -163,7 +163,7 @@ const HireMeSection = () => {
             </Button>
             <Button asChild className="neon-button neon-button--purple">
               <a 
-                href="https://www.freelancer.com/u/ritwikraj456?sb=t" 
+                href="https://www.freelancer.com/u/ritwikraj56?sb=t" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
