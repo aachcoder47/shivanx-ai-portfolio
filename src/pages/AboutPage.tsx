@@ -66,21 +66,55 @@ const AboutPage = () => {
                 >
                   Portfolio Website
                   <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </a>
                 
                 <a 
-                  href="https://www.freelancer.com/u/ritwikraj456?sb=t" 
+                  href="https://www.freelancer.com/u/ritwikraj56?sb=t" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-cyber-cyan/20 border border-cyber-cyan/30 rounded-lg hover:bg-cyber-cyan/30 transition-colors text-cyber-cyan font-medium ml-3"
                 >
                   Freelancer Profile
                   <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </a>
+                
+                <a 
+                  href="https://shivanshrajauj6ax4r.contra.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-cyber-purple/20 border border-cyber-purple/30 rounded-lg hover:bg-cyber-purple/30 transition-colors text-cyber-purple font-medium block mt-3"
+                >
+                  Contra Portfolio
+                  <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+              
+              <div className="mt-8 p-6 bg-gradient-to-r from-cyber-purple/10 to-cyber-cyan/10 rounded-lg border border-cyber-purple/20">
+                <h3 className="text-lg font-semibold text-cyber-cyan mb-4">Professional Highlights</h3>
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div className="text-center">
+                    <div className="font-bold text-cyber-purple">5.0 ★</div>
+                    <div className="text-gray-400">Perfect Rating</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-cyber-cyan">100%</div>
+                    <div className="text-gray-400">Success Rate</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-cyber-purple">$15/hr</div>
+                    <div className="text-gray-400">Competitive Rate</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-cyber-cyan">6+ Projects</div>
+                    <div className="text-gray-400">Completed</div>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
