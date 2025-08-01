@@ -58,6 +58,19 @@ const HeroSection = () => {
               Hire Me on Fiverr <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
+
+          <Button 
+            asChild
+            className="neon-button neon-button--magenta"
+          >
+            <a 
+              href="https://shivanshrajauj6ax4r.contra.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Hire Me on Contra <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
+          </Button>
         </motion.div>
       </div>
       
