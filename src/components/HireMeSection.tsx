@@ -61,14 +61,40 @@ const HireMeSection = () => {
                     Hire on Freelancer (Big Projects/Hourly)
                   </a>
                 </Button>
+                
+                <Button asChild variant="outline" className="w-full justify-start">
+                  <a 
+                    href="https://shivanshrajauj6ax4r.contra.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    <ExternalLink className="mr-3 h-4 w-4" />
+                    View Contra Portfolio
+                  </a>
+                </Button>
+                
+                <Button asChild variant="outline" className="w-full justify-start">
+                  <a 
+                    href="https://calendly.com/nishirajesh460/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    <Calendar className="mr-3 h-4 w-4" />
+                    Schedule a Meeting
+                  </a>
+                </Button>
               </div>
               
               <div className="bg-cyber-cyan/10 rounded-lg p-4 mt-6">
                 <h4 className="font-semibold text-cyber-cyan mb-2">Choose Your Platform</h4>
                 <div className="text-gray-300 text-sm space-y-2">
                   <div><strong>Fiverr:</strong> Perfect for fixed-price projects and quick deliveries</div>
-                  <div><strong>Freelancer:</strong> Ideal for big projects, long-term work, and hourly engagements</div>
-                  <div className="mt-2 text-xs text-gray-400">Average response time: 2 hours on both platforms</div>
+                  <div><strong>Freelancer:</strong> Ideal for big projects, long-term work, and hourly engagements ($15/hour)</div>
+                  <div><strong>Contra:</strong> Custom AI models, automation, and consultation services</div>
+                  <div><strong>Calendly:</strong> Book a free 30-minute consultation to discuss your project</div>
+                  <div className="mt-2 text-xs text-gray-400">Average response time: 2 hours on all platforms • 100% completion rate</div>
                 </div>
               </div>
             </CardContent>
@@ -95,16 +121,16 @@ const HireMeSection = () => {
                   <div className="text-gray-400">Python Experience</div>
                 </div>
                 <div className="bg-cyber-cyan/10 rounded-lg p-3 text-center">
-                  <div className="font-semibold text-cyber-cyan">35+ Reviews</div>
-                  <div className="text-gray-400">5-Star Rating</div>
+                  <div className="font-semibold text-cyber-cyan">5.0 Rating</div>
+                  <div className="text-gray-400">Perfect Reviews</div>
                 </div>
                 <div className="bg-cyber-purple/10 rounded-lg p-3 text-center">
-                  <div className="font-semibold text-cyber-purple">Fast Delivery</div>
-                  <div className="text-gray-400">2-Hour Response</div>
+                  <div className="font-semibold text-cyber-purple">100% Success</div>
+                  <div className="text-gray-400">Project Completion</div>
                 </div>
                 <div className="bg-cyber-cyan/10 rounded-lg p-3 text-center">
-                  <div className="font-semibold text-cyber-cyan">24/7 Support</div>
-                  <div className="text-gray-400">Always Available</div>
+                  <div className="font-semibold text-cyber-cyan">$15/Hour</div>
+                  <div className="text-gray-400">Competitive Rate</div>
                 </div>
               </div>
               
@@ -123,13 +149,25 @@ const HireMeSection = () => {
                 
                 <Button asChild variant="outline" className="w-full">
                   <a 
-                    href="https://www.freelancer.com/u/ritwikraj56?sb=t" 
+                    href="https://contra.com/shivansh_raj_auj6ax4r" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    View Freelancer Profile
+                    View Contra Profile
                     <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+                
+                <Button asChild variant="outline" className="w-full">
+                  <a 
+                    href="https://calendly.com/nishirajesh460/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    Schedule Consultation
+                    <Calendar className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </div>
@@ -171,8 +209,21 @@ const HireMeSection = () => {
               </a>
             </Button>
             <Button asChild variant="outline">
-              <a href="/contact">
-                Free Consultation
+              <a 
+                href="https://shivanshrajauj6ax4r.contra.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Work with me on Contra
+              </a>
+            </Button>
+            <Button asChild variant="outline">
+              <a 
+                href="https://calendly.com/nishirajesh460/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Schedule Meeting
               </a>
             </Button>
           </div>
