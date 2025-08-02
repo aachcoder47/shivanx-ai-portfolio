@@ -11,8 +11,24 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-radial from-cyber-purple/10 to-transparent pointer-events-none" />
       
       <div 
-        className="container mx-auto px-4 md:px-6 py-24 relative z-10 flex flex-col items-center justify-center text-center"
+        className="container mx-auto px-4 md:px-6 py-24 relative z-10 flex flex-col lg:flex-row items-center justify-center gap-12"
       >
+        <div className="flex-1 text-center lg:text-left">
+          <motion.div
+            className="mb-8 flex justify-center lg:justify-start"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <img 
+              src="/lovable-uploads/79e030d8-91a1-4db4-b676-2d15fa4365c1.png" 
+              alt="Ritwik Raj"
+              className="w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-cyber-purple shadow-2xl"
+            />
+          </motion.div>
+        </div>
+        
+        <div className="flex-1 text-center lg:text-left">
         <motion.h1 
           className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tighter mb-6 glitch-effect"
           initial={{ opacity: 0, y: 20 }}
@@ -72,6 +88,7 @@ const HeroSection = () => {
             </a>
           </Button>
         </motion.div>
+        </div>
       </div>
       
       <div className="absolute bottom-10 left-0 right-0 flex justify-center">

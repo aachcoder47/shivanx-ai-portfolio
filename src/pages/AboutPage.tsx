@@ -21,7 +21,7 @@ const AboutPage = () => {
             <div className="flex justify-center mb-8">
               <Avatar className="w-32 h-32 border-4 border-cyber-purple">
                 <AvatarImage 
-                  src="/lovable-uploads/03f359e0-a920-4d33-ac50-62756adbe544.png" 
+                  src="/lovable-uploads/79e030d8-91a1-4db4-b676-2d15fa4365c1.png" 
                   alt="Ritwik Raj" 
                   className="object-cover"
                 />
@@ -93,6 +93,12 @@ const AboutPage = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </a>
+                
+                <div className="mt-4">
+                  <div className="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="shivansh-raj-2602052a0">
+                    <a className="LI-simple-link" href='https://in.linkedin.com/in/shivansh-raj-2602052a0?trk=profile-badge'>Shivansh Raj</a>
+                  </div>
+                </div>
               </div>
               
               <div className="mt-8 p-6 bg-gradient-to-r from-cyber-purple/10 to-cyber-cyan/10 rounded-lg border border-cyber-purple/20">
