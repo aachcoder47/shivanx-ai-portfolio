@@ -7,15 +7,6 @@ import { Badge } from '@/components/ui/badge';
 const YouTubeSection = () => {
   const videos = [
     {
-      id: "ZoJ2OctrFLA",
-      title: "Why Are Time Series Special? : Time Series Talk",
-      description: "So ... what's so special about time series?",
-      thumbnail: `https://img.youtube.com/vi/ZoJ2OctrFLA/maxresdefault.jpg`,
-      views: "101K", 
-      tags: ["Time Series", "Statistics", "Analysis"],
-      url: "https://www.youtube.com/watch?v=ZoJ2OctrFLA"
-    },
-    {
       id: "DeORzP0go5I",
       title: "Time Series Talk : Autocorrelation and Partial Autocorrelation",
       description: "Intuitive understanding of autocorrelation and partial autocorrelation in time series forecasting",
@@ -27,11 +18,29 @@ const YouTubeSection = () => {
     {
       id: "3UmyHed0iYE",
       title: "Time Series Talk : ARIMA Model",
-      description: "Intro to the ARIMA model in time series analysis.",
+      description: "Intro to the ARIMA model in time series analysis",
       thumbnail: `https://img.youtube.com/vi/3UmyHed0iYE/maxresdefault.jpg`,
       views: "376K",
       tags: ["Time Series", "ARIMA", "Forecasting"],
       url: "https://www.youtube.com/watch?v=3UmyHed0iYE"
+    },
+    {
+      id: "5-2C4eO4cPQ",
+      title: "Time Series Talk : Autoregressive Model",
+      description: "Gentle intro to the AR model in Time Series Forecasting",
+      thumbnail: `https://img.youtube.com/vi/5-2C4eO4cPQ/maxresdefault.jpg`,
+      views: "362K",
+      tags: ["Time Series", "AR Model", "Forecasting"],
+      url: "https://www.youtube.com/watch?v=5-2C4eO4cPQ"
+    },
+    {
+      id: "voryLhxiPzE",
+      title: "Time Series Talk : Moving Average Model",
+      description: "A gentle intro to the Moving Average model in Time Series Analysis",
+      thumbnail: `https://img.youtube.com/vi/voryLhxiPzE/maxresdefault.jpg`,
+      views: "219K",
+      tags: ["Time Series", "MA Model", "Analysis"],
+      url: "https://www.youtube.com/watch?v=voryLhxiPzE"
     },
     {
       id: "oY-j2Wof51c",
@@ -43,6 +52,24 @@ const YouTubeSection = () => {
       url: "https://www.youtube.com/watch?v=oY-j2Wof51c"
     },
     {
+      id: "HhvTlaN06AM",
+      title: "Time Series Talk : ARMA Model",
+      description: "The Autoregressive Moving Average (ARMA) model in time series analysis",
+      thumbnail: `https://img.youtube.com/vi/HhvTlaN06AM/maxresdefault.jpg`,
+      views: "189K",
+      tags: ["Time Series", "ARMA", "Forecasting"],
+      url: "https://www.youtube.com/watch?v=HhvTlaN06AM"
+    },
+    {
+      id: "ugOvehrTRRw",
+      title: "Unit Roots : Time Series Talk",
+      description: "All about unit roots and why they pose such a problem for us",
+      thumbnail: `https://img.youtube.com/vi/ugOvehrTRRw/maxresdefault.jpg`,
+      views: "142K",
+      tags: ["Time Series", "Unit Roots", "Statistics"],
+      url: "https://www.youtube.com/watch?v=ugOvehrTRRw"
+    },
+    {
       id: "1opjnegd_hA",
       title: "Time Series Talk : Augmented Dickey Fuller Test + Code",
       description: "Theory and code behind the Augmented Dickey Fuller Test",
@@ -52,15 +79,6 @@ const YouTubeSection = () => {
       url: "https://www.youtube.com/watch?v=1opjnegd_hA"
     },
     {
-      id: "ugOvehrTRRw",
-      title: "Unit Roots : Time Series Talk",
-      description: "All about unit roots and why they pose such a problem for us.",
-      thumbnail: `https://img.youtube.com/vi/ugOvehrTRRw/maxresdefault.jpg`,
-      views: "142K",
-      tags: ["Time Series", "Unit Roots", "Statistics"],
-      url: "https://www.youtube.com/watch?v=ugOvehrTRRw"
-    },
-    {
       id: "inoBpq1UEn4",
       title: "GARCH Model : Time Series Talk",
       description: "All about the GARCH model in Time Series Analysis!",
@@ -68,24 +86,6 @@ const YouTubeSection = () => {
       views: "109K",
       tags: ["Time Series", "GARCH", "Volatility"],
       url: "https://www.youtube.com/watch?v=inoBpq1UEn4"
-    },
-    {
-      id: "McEN54l3EPU",
-      title: "Time Series Model Selection (AIC & BIC) : Time Series Talk",
-      description: "How do we pick between several possible time series models?",
-      thumbnail: `https://img.youtube.com/vi/McEN54l3EPU/maxresdefault.jpg`,
-      views: "62K",
-      tags: ["Time Series", "Model Selection", "AIC"],
-      url: "https://www.youtube.com/watch?v=McEN54l3EPU"
-    },
-    {
-      id: "7_Js8h709Dw",
-      title: "Cleaning Time Series Data : Time Series Talk",
-      description: "How to clean a time series you find in the wild!",
-      thumbnail: `https://img.youtube.com/vi/7_Js8h709Dw/maxresdefault.jpg`,
-      views: "37K",
-      tags: ["Time Series", "Data Cleaning", "Python"],
-      url: "https://www.youtube.com/watch?v=7_Js8h709Dw"
     }
   ];
 
