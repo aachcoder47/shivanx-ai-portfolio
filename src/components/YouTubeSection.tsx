@@ -7,31 +7,50 @@ import { Badge } from '@/components/ui/badge';
 const YouTubeSection = () => {
   const videos = [
     {
-      id: "1",
-      title: "AI Content Generator Tutorial",
-      description: "Learn how to build an AI-powered content generator with Python and modern AI APIs",
-      thumbnail: "/lovable-uploads/03f359e0-a920-4d33-ac50-62756adbe544.png",
-      views: "2.5K",
-      duration: "15:30",
-      tags: ["AI", "Python", "Tutorial"]
+      id: "UhHSX5CahkU",
+      title: "Do Pokemon Really Need All 6 Stats?",
+      description: "A whole new stat system for Pokemon! Exploring statistical analysis and data science concepts through Pokemon mechanics.",
+      thumbnail: `https://img.youtube.com/vi/UhHSX5CahkU/maxresdefault.jpg`,
+      views: "21K",
+      duration: "12:45",
+      tags: ["Statistics", "Data Science", "Pokemon"],
+      url: "https://www.youtube.com/watch?v=UhHSX5CahkU"
     },
     {
-      id: "2", 
-      title: "Building Trading Bots with Python",
-      description: "Complete guide to creating automated trading bots for scalping strategies",
-      thumbnail: "/lovable-uploads/55e5506c-9c8a-4af9-a884-d94269d3e251.png",
-      views: "4.1K",
-      duration: "22:45",
-      tags: ["Trading", "Python", "Automation"]
+      id: "33kb37NYOTc", 
+      title: "The 4 Must-Know LLM Parameters and the Intuitive Math Behind Them",
+      description: "The intuitive mathematics behind the four LLM parameters that will most help perfect your LLM applications!",
+      thumbnail: `https://img.youtube.com/vi/33kb37NYOTc/maxresdefault.jpg`,
+      views: "3.4K",
+      duration: "15:20",
+      tags: ["LLM", "Machine Learning", "AI"]
     },
     {
-      id: "3",
-      title: "Machine Learning for Medical Imaging",
-      description: "How to use AI to detect brain tumors in MRI scans with TensorFlow",
-      thumbnail: "/lovable-uploads/79e030d8-91a1-4db4-b676-2d15fa4365c1.png",
-      views: "3.8K", 
-      duration: "18:20",
-      tags: ["ML", "Medical", "TensorFlow"]
+      id: "ZoJ2OctrFLA",
+      title: "Why Are Time Series Special? : Time Series Talk",
+      description: "So ... what's so special about time series? Deep dive into time series analysis and its unique properties.",
+      thumbnail: `https://img.youtube.com/vi/ZoJ2OctrFLA/maxresdefault.jpg`,
+      views: "101K", 
+      duration: "10:30",
+      tags: ["Time Series", "Statistics", "Analysis"]
+    },
+    {
+      id: "1opjnegd_hA",
+      title: "Time Series Talk : Augmented Dickey Fuller Test + Code",
+      description: "Theory and code behind the Augmented Dickey Fuller Test for testing stationarity in time series data.",
+      thumbnail: `https://img.youtube.com/vi/1opjnegd_hA/maxresdefault.jpg`,
+      views: "141K",
+      duration: "18:15",
+      tags: ["Time Series", "Statistics", "Python"]
+    },
+    {
+      id: "g2ext963IZg",
+      title: "What is R Squared?",
+      description: "Understanding R-squared: the coefficient of determination and its role in evaluating model performance.",
+      thumbnail: `https://img.youtube.com/vi/g2ext963IZg/maxresdefault.jpg`,
+      views: "33K",
+      duration: "8:45",
+      tags: ["Statistics", "Regression", "R-squared"]
     }
   ];
 
@@ -90,7 +109,7 @@ const YouTubeSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="overflow-hidden bg-card/50 backdrop-blur-sm border-cyber-purple/20 hover:border-cyber-purple/40 transition-all duration-300 group">
+              <Card className="overflow-hidden bg-card/50 backdrop-blur-sm border-cyber-purple/20 hover:border-cyber-purple/40 transition-all duration-300 group cursor-pointer" onClick={() => window.open(video.url || `https://www.youtube.com/watch?v=${video.id}`, '_blank')}>
                 <div className="relative overflow-hidden">
                   <img 
                     src={video.thumbnail} 
