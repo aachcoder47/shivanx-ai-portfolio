@@ -7,50 +7,85 @@ import { Badge } from '@/components/ui/badge';
 const YouTubeSection = () => {
   const videos = [
     {
-      id: "UhHSX5CahkU",
-      title: "Do Pokemon Really Need All 6 Stats?",
-      description: "A whole new stat system for Pokemon! Exploring statistical analysis and data science concepts through Pokemon mechanics.",
-      thumbnail: `https://img.youtube.com/vi/UhHSX5CahkU/maxresdefault.jpg`,
-      views: "21K",
-      duration: "12:45",
-      tags: ["Statistics", "Data Science", "Pokemon"],
-      url: "https://www.youtube.com/watch?v=UhHSX5CahkU"
-    },
-    {
-      id: "33kb37NYOTc", 
-      title: "The 4 Must-Know LLM Parameters and the Intuitive Math Behind Them",
-      description: "The intuitive mathematics behind the four LLM parameters that will most help perfect your LLM applications!",
-      thumbnail: `https://img.youtube.com/vi/33kb37NYOTc/maxresdefault.jpg`,
-      views: "3.4K",
-      duration: "15:20",
-      tags: ["LLM", "Machine Learning", "AI"]
-    },
-    {
       id: "ZoJ2OctrFLA",
       title: "Why Are Time Series Special? : Time Series Talk",
-      description: "So ... what's so special about time series? Deep dive into time series analysis and its unique properties.",
+      description: "So ... what's so special about time series?",
       thumbnail: `https://img.youtube.com/vi/ZoJ2OctrFLA/maxresdefault.jpg`,
       views: "101K", 
-      duration: "10:30",
-      tags: ["Time Series", "Statistics", "Analysis"]
+      tags: ["Time Series", "Statistics", "Analysis"],
+      url: "https://www.youtube.com/watch?v=ZoJ2OctrFLA"
+    },
+    {
+      id: "DeORzP0go5I",
+      title: "Time Series Talk : Autocorrelation and Partial Autocorrelation",
+      description: "Intuitive understanding of autocorrelation and partial autocorrelation in time series forecasting",
+      thumbnail: `https://img.youtube.com/vi/DeORzP0go5I/maxresdefault.jpg`,
+      views: "455K",
+      tags: ["Time Series", "Autocorrelation", "Statistics"],
+      url: "https://www.youtube.com/watch?v=DeORzP0go5I"
+    },
+    {
+      id: "3UmyHed0iYE",
+      title: "Time Series Talk : ARIMA Model",
+      description: "Intro to the ARIMA model in time series analysis.",
+      thumbnail: `https://img.youtube.com/vi/3UmyHed0iYE/maxresdefault.jpg`,
+      views: "376K",
+      tags: ["Time Series", "ARIMA", "Forecasting"],
+      url: "https://www.youtube.com/watch?v=3UmyHed0iYE"
+    },
+    {
+      id: "oY-j2Wof51c",
+      title: "Time Series Talk : Stationarity",
+      description: "Intro to stationarity in time series analysis",
+      thumbnail: `https://img.youtube.com/vi/oY-j2Wof51c/maxresdefault.jpg`,
+      views: "193K",
+      tags: ["Time Series", "Stationarity", "Statistics"],
+      url: "https://www.youtube.com/watch?v=oY-j2Wof51c"
     },
     {
       id: "1opjnegd_hA",
       title: "Time Series Talk : Augmented Dickey Fuller Test + Code",
-      description: "Theory and code behind the Augmented Dickey Fuller Test for testing stationarity in time series data.",
+      description: "Theory and code behind the Augmented Dickey Fuller Test",
       thumbnail: `https://img.youtube.com/vi/1opjnegd_hA/maxresdefault.jpg`,
       views: "141K",
-      duration: "18:15",
-      tags: ["Time Series", "Statistics", "Python"]
+      tags: ["Time Series", "ADF Test", "Python"],
+      url: "https://www.youtube.com/watch?v=1opjnegd_hA"
     },
     {
-      id: "g2ext963IZg",
-      title: "What is R Squared?",
-      description: "Understanding R-squared: the coefficient of determination and its role in evaluating model performance.",
-      thumbnail: `https://img.youtube.com/vi/g2ext963IZg/maxresdefault.jpg`,
-      views: "33K",
-      duration: "8:45",
-      tags: ["Statistics", "Regression", "R-squared"]
+      id: "ugOvehrTRRw",
+      title: "Unit Roots : Time Series Talk",
+      description: "All about unit roots and why they pose such a problem for us.",
+      thumbnail: `https://img.youtube.com/vi/ugOvehrTRRw/maxresdefault.jpg`,
+      views: "142K",
+      tags: ["Time Series", "Unit Roots", "Statistics"],
+      url: "https://www.youtube.com/watch?v=ugOvehrTRRw"
+    },
+    {
+      id: "inoBpq1UEn4",
+      title: "GARCH Model : Time Series Talk",
+      description: "All about the GARCH model in Time Series Analysis!",
+      thumbnail: `https://img.youtube.com/vi/inoBpq1UEn4/maxresdefault.jpg`,
+      views: "109K",
+      tags: ["Time Series", "GARCH", "Volatility"],
+      url: "https://www.youtube.com/watch?v=inoBpq1UEn4"
+    },
+    {
+      id: "McEN54l3EPU",
+      title: "Time Series Model Selection (AIC & BIC) : Time Series Talk",
+      description: "How do we pick between several possible time series models?",
+      thumbnail: `https://img.youtube.com/vi/McEN54l3EPU/maxresdefault.jpg`,
+      views: "62K",
+      tags: ["Time Series", "Model Selection", "AIC"],
+      url: "https://www.youtube.com/watch?v=McEN54l3EPU"
+    },
+    {
+      id: "7_Js8h709Dw",
+      title: "Cleaning Time Series Data : Time Series Talk",
+      description: "How to clean a time series you find in the wild!",
+      thumbnail: `https://img.youtube.com/vi/7_Js8h709Dw/maxresdefault.jpg`,
+      views: "37K",
+      tags: ["Time Series", "Data Cleaning", "Python"],
+      url: "https://www.youtube.com/watch?v=7_Js8h709Dw"
     }
   ];
 
@@ -122,9 +157,6 @@ const YouTubeSection = () => {
                         <path d="M8 5v14l11-7z"/>
                       </svg>
                     </div>
-                  </div>
-                  <div className="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded">
-                    {video.duration}
                   </div>
                   <div className="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded">
                     {video.views} views
