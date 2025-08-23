@@ -94,6 +94,18 @@ const AboutPage = () => {
                   </svg>
                 </a>
                 
+                <a 
+                  href="https://www.youtube.com/@Ritwik8908" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-red-600/20 border border-red-600/30 rounded-lg hover:bg-red-600/30 transition-colors text-red-400 font-medium block mt-3"
+                >
+                  YouTube Channel
+                  <svg className="ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </a>
+                
                 <div className="mt-4">
                   <div className="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="shivansh-raj-2602052a0">
                     <a className="LI-simple-link" href='https://in.linkedin.com/in/shivansh-raj-2602052a0?trk=profile-badge'>Shivansh Raj</a>

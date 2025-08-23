@@ -34,6 +34,16 @@ const Footer = () => {
               <li>
                 <Link to="/contact" className="text-gray-400 hover:text-cyber-cyan transition-colors">Contact</Link>
               </li>
+              <li>
+                <a 
+                  href="https://www.youtube.com/@Ritwik8908" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-cyber-cyan transition-colors"
+                >
+                  YouTube Channel
+                </a>
+              </li>
             </ul>
           </div>
           

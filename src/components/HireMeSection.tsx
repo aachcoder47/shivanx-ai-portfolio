@@ -74,7 +74,7 @@ const HireMeSection = () => {
                   </a>
                 </Button>
                 
-                <Button asChild variant="outline" className="w-full justify-start">
+                <Button asChild className="w-full justify-start neon-button neon-button--purple animate-pulse">
                   <a 
                     href="https://calendly.com/nishirajesh460/" 
                     target="_blank" 
@@ -82,7 +82,7 @@ const HireMeSection = () => {
                     className="flex items-center"
                   >
                     <Calendar className="mr-3 h-4 w-4" />
-                    Schedule a Meeting
+                    🚀 Schedule a FREE Meeting
                   </a>
                 </Button>
               </div>
@@ -159,14 +159,14 @@ const HireMeSection = () => {
                   </a>
                 </Button>
                 
-                <Button asChild variant="outline" className="w-full">
+                <Button asChild className="w-full neon-button neon-button--cyan animate-bounce">
                   <a 
                     href="https://calendly.com/nishirajesh460/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    Schedule Consultation
+                    🎯 Schedule FREE Consultation
                     <Calendar className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -217,13 +217,13 @@ const HireMeSection = () => {
                 Work with me on Contra
               </a>
             </Button>
-            <Button asChild variant="outline">
+            <Button asChild className="neon-button neon-button--purple animate-pulse">
               <a 
                 href="https://calendly.com/nishirajesh460/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Schedule Meeting
+                📅 Schedule FREE Meeting
               </a>
             </Button>
           </div>
