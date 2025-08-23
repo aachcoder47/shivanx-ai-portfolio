@@ -6,6 +6,7 @@ import ProjectShowcase from '@/components/ProjectShowcase';
 import FiverrSection from '@/components/FiverrSection';
 import HireMeSection from '@/components/HireMeSection';
 import BackgroundEffect from '@/components/BackgroundEffect';
+import SchedulePopup from '@/components/SchedulePopup';
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <ProjectShowcase />
       <FiverrSection />
       <HireMeSection />
+      <SchedulePopup />
     </>
   );
 };
