@@ -160,7 +160,7 @@ const ProjectShowcase = () => {
               </a>
             </Button>
             <Button asChild variant="outline">
-              <a href="https://calendly.com/nishirajesh460/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+              <a href="https://calendly.com/aachcoder47/ritwikraj8908" target="_blank" rel="noopener noreferrer" className="flex items-center">
                 <Calendar className="mr-2 h-4 w-4" />
                 Schedule Meeting
               </a>

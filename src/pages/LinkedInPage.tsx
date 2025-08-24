@@ -165,7 +165,7 @@ const LinkedInPage = () => {
               </Button>
               <Button asChild variant="outline">
                 <a 
-                  href="https://calendly.com/nishirajesh460/" 
+                  href="https://calendly.com/aachcoder47/ritwikraj8908" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center"

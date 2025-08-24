@@ -18,7 +18,7 @@ const SchedulePopup = () => {
   }, []);
 
   const handleScheduleClick = () => {
-    window.open('https://calendly.com/ritwikraj8908', '_blank');
+    window.open('https://calendly.com/aachcoder47/ritwikraj8908', '_blank');
     setIsOpen(false);
     setShowInitialPopup(false);
   };

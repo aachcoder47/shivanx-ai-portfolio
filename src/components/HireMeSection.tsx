@@ -76,7 +76,7 @@ const HireMeSection = () => {
                 
                 <Button asChild className="w-full justify-start neon-button neon-button--purple animate-pulse">
                   <a 
-                    href="https://calendly.com/nishirajesh460/" 
+                    href="https://calendly.com/aachcoder47/ritwikraj8908" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center"
@@ -161,7 +161,7 @@ const HireMeSection = () => {
                 
                 <Button asChild className="w-full neon-button neon-button--cyan animate-bounce">
                   <a 
-                    href="https://calendly.com/nishirajesh460/" 
+                    href="https://calendly.com/aachcoder47/ritwikraj8908" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center"
@@ -219,7 +219,7 @@ const HireMeSection = () => {
             </Button>
             <Button asChild className="neon-button neon-button--purple animate-pulse">
               <a 
-                href="https://calendly.com/nishirajesh460/" 
+                href="https://calendly.com/aachcoder47/ritwikraj8908" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
