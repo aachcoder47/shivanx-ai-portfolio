@@ -9,7 +9,7 @@ const FeaturedProjects = () => {
   const featuredProjects = [
     {
       title: "AI PPT Generator",
-      description: "A tool that transforms text into professional PowerPoint presentations using AI.",
+      description: "A tool that transforms text into professional PowerPoint presentations using AI. (Currently not working)",
       image: "/placeholder.svg",
       slug: "ai-ppt-generator",
       color: "purple" as const,

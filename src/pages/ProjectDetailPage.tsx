@@ -14,10 +14,12 @@ const ProjectDetailPage = () => {
   const projectData = {
     'ai-ppt-generator': {
       title: 'AI PPT Generator',
-      description: 'A tool that transforms text into professional PowerPoint presentations using AI.',
+      description: 'A tool that transforms text into professional PowerPoint presentations using AI. (Currently not working)',
       color: 'purple' as const,
       demoLink: 'https://huggingface.co/spaces/ash2203/AI_PPT_Generator',
       fullDescription: `
+        ⚠️ Note: This project is currently not working and under maintenance.
+        
         The AI PPT Generator is an advanced tool that leverages natural language processing and computer vision to automatically create stunning PowerPoint presentations from text input.
         
         By analyzing the content structure, identifying key points, and applying design principles, it creates professional slides that maintain visual consistency and engagement.
