@@ -82,7 +82,7 @@ const Navigation = () => {
             ))}
             <Button asChild className="neon-button neon-button--purple">
               <a 
-                href="https://www.fiverr.com/users/god_dev456" 
+                href="https://shivanshrajauj6ax4r.contra.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -123,7 +123,7 @@ const Navigation = () => {
           ))}
           <Button asChild className="neon-button neon-button--purple mt-4">
             <a 
-              href="https://www.fiverr.com/users/god_dev456" 
+              href="https://shivanshrajauj6ax4r.contra.com/" 
               target="_blank" 
               rel="noopener noreferrer"
             >

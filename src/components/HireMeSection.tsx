@@ -38,29 +38,6 @@ const HireMeSection = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-3">
-                <Button asChild className="w-full justify-start neon-button neon-button--cyan">
-                  <a 
-                    href="https://www.fiverr.com/users/god_dev456" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center"
-                  >
-                    <MessageCircle className="mr-3 h-4 w-4" />
-                    Hire on Fiverr (Fixed Projects)
-                  </a>
-                </Button>
-                
-                <Button asChild variant="outline" className="w-full justify-start">
-                  <a 
-                    href="https://www.freelancer.com/u/ritwikraj56?sb=t" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center"
-                  >
-                    <MessageCircle className="mr-3 h-4 w-4" />
-                    Hire on Freelancer (Big Projects/Hourly)
-                  </a>
-                </Button>
                 
                 <Button asChild variant="outline" className="w-full justify-start">
                   <a 
@@ -90,11 +67,9 @@ const HireMeSection = () => {
               <div className="bg-cyber-cyan/10 rounded-lg p-4 mt-6">
                 <h4 className="font-semibold text-cyber-cyan mb-2">Choose Your Platform</h4>
                 <div className="text-gray-300 text-sm space-y-2">
-                  <div><strong>Fiverr:</strong> Perfect for fixed-price projects and quick deliveries</div>
-                  <div><strong>Freelancer:</strong> Ideal for big projects, long-term work, and hourly engagements ($15/hour)</div>
                   <div><strong>Contra:</strong> Custom AI models, automation, and consultation services</div>
                   <div><strong>Calendly:</strong> Book a free 30-minute consultation to discuss your project</div>
-                  <div className="mt-2 text-xs text-gray-400">Average response time: 2 hours on all platforms • 100% completion rate</div>
+                  <div className="mt-2 text-xs text-gray-400">Average response time: 2 hours • 100% completion rate</div>
                 </div>
               </div>
             </CardContent>
@@ -190,24 +165,6 @@ const HireMeSection = () => {
             Let's discuss your requirements and create something amazing together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild className="neon-button neon-button--cyan">
-              <a 
-                href="https://www.fiverr.com/users/god_dev456" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Hire on Fiverr
-              </a>
-            </Button>
-            <Button asChild className="neon-button neon-button--purple">
-              <a 
-                href="https://www.freelancer.com/u/ritwikraj56?sb=t" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Hire on Freelancer
-              </a>
-            </Button>
             <Button asChild variant="outline">
               <a 
                 href="https://shivanshrajauj6ax4r.contra.com/" 

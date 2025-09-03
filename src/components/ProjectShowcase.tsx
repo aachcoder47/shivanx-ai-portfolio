@@ -150,8 +150,8 @@ const ProjectShowcase = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild className="neon-button neon-button--cyan">
-              <a href="https://www.freelancer.com/u/ritwikraj56?sb=t" target="_blank" rel="noopener noreferrer">
-                Hire on Freelancer
+              <a href="https://shivanshrajauj6ax4r.contra.com/" target="_blank" rel="noopener noreferrer">
+                Hire on Contra
               </a>
             </Button>
             <Button asChild className="neon-button neon-button--purple">

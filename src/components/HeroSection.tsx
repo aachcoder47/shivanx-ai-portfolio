@@ -67,11 +67,11 @@ const HeroSection = () => {
             className="neon-button neon-button--cyan"
           >
             <a 
-              href="https://www.fiverr.com/users/god_dev456" 
+              href="https://shivanshrajauj6ax4r.contra.com/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Hire Me on Fiverr <ArrowRight className="ml-2 h-4 w-4" />
+              Hire Me <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
 
