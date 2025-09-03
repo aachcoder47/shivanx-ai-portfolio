@@ -20,7 +20,7 @@ const ProjectsPage = () => {
       image: "/placeholder.svg",
       slug: "docai-chatbot",
       color: "cyan" as const,
-      demoLink: "https://huggingface.co/spaces/aach456/DocAI-chatbot",
+      demoLink: "https://colab.research.google.com/drive/bc1qdw7cav7z9l2675fslaupjxu4ugdn2lz5x8q5e7?usp=sharing",
     },
     {
       title: "Music Generation AI",
