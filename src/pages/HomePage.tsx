@@ -8,6 +8,7 @@ import BackgroundEffect from '@/components/BackgroundEffect';
 import SchedulePopup from '@/components/SchedulePopup';
 
 const HomePage = () => {
+  console.log('HomePage component rendering...')
   return (
     <>
       <BackgroundEffect />

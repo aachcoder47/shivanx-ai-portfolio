@@ -17,7 +17,9 @@ import Index from "./pages/Index";
 // Create the query client outside of the component
 const queryClient = new QueryClient();
 
-const App = () => (
+const App = () => {
+  console.log('App component rendering...')
+  return (
   <QueryClientProvider client={queryClient}>
     <React.StrictMode>
       <TooltipProvider>
@@ -39,6 +41,7 @@ const App = () => (
       </TooltipProvider>
     </React.StrictMode>
   </QueryClientProvider>
-);
+  );
+};
 
 export default App;
