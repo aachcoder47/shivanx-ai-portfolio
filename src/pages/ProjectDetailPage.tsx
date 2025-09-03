@@ -208,6 +208,22 @@ const ProjectDetailPage = () => {
                 View Live Demo
               </Button>
               
+              {(project as any).colabLink && (
+                <Button 
+                  variant="outline" 
+                  className="border-orange-600 hover:bg-orange-800 text-orange-400"
+                  asChild
+                >
+                  <a 
+                    href={(project as any).colabLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Open in Google Colab
+                  </a>
+                </Button>
+              )}
+              
               <Button 
                 variant="outline" 
                 className="border-gray-600 hover:bg-gray-800"
