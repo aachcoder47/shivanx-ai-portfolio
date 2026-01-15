@@ -45,6 +45,14 @@ const ProjectsPage = () => {
       slug: "scalping-trading-bot",
       color: "cyan" as const,
       demoLink: "https://gitlab.com/aach1/scalping-trading-bot",
+    },
+    {
+      title: "HR Futuristic Creations",
+      description: "A modern HR management platform for futuristic workforce solutions.",
+      image: "/placeholder.svg",
+      slug: "hr-futuristic-creations",
+      color: "magenta" as const,
+      demoLink: "https://hr.futuristiccreations.store/",
     }
   ];
 

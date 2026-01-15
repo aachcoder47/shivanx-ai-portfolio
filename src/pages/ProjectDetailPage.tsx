@@ -113,6 +113,26 @@ const ProjectDetailPage = () => {
         'Risk management controls and reporting'
       ],
       technologies: ['Machine Learning', 'Time Series Analysis', 'Python', 'Node.js', 'Trading APIs']
+    },
+    'hr-futuristic-creations': {
+      title: 'HR Futuristic Creations',
+      description: 'A modern HR management platform for futuristic workforce solutions.',
+      color: 'magenta' as const,
+      demoLink: 'https://hr.futuristiccreations.store/',
+      fullDescription: `
+        HR Futuristic Creations is a comprehensive human resources management platform designed for modern organizations.
+        
+        It streamlines HR operations including employee management, recruitment, performance tracking, and workforce analytics with a sleek, user-friendly interface.
+        
+        The platform helps businesses manage their workforce efficiently while providing insights for strategic decision-making.
+      `,
+      features: [
+        'Employee management and directory',
+        'Recruitment and onboarding workflows',
+        'Performance tracking and reviews',
+        'Workforce analytics and reporting'
+      ],
+      technologies: ['React', 'Node.js', 'Database Management', 'REST APIs', 'Modern UI/UX']
     }
   };
   
