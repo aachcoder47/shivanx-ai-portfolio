@@ -24,12 +24,12 @@ const FeaturedProjects = () => {
       demoLink: "https://huggingface.co/spaces/aach456/DocAI-chatbot",
     },
     {
-      title: "Music Generation AI",
-      description: "An AI system that composes music based on user input.",
+      title: "HR Futuristic Creations",
+      description: "A modern HR management platform for futuristic workforce solutions.",
       image: "/placeholder.svg",
-      slug: "music-generation-ai",
+      slug: "hr-futuristic-creations",
       color: "magenta" as const,
-      demoLink: "https://huggingface.co/spaces/aach456/music-gen-ai",
+      demoLink: "https://hr.futuristiccreations.store/",
     }
   ];
 
